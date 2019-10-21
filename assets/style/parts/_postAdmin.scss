@@ -1,0 +1,93 @@
+#postAdmin,
+#createPage{
+    #adminTools{
+        //display: none;
+        label{
+            font-family: 'Roboto', sans-serif;
+            font-weight: 300;
+            color:#fff;
+            font-size: 1.2em;
+            padding:20px 0;
+            display: block;
+        }
+        input{
+            padding:15px;
+            box-sizing: border-box;
+            border:none;
+
+            font-family: 'Roboto', sans-serif;
+            font-weight:300;
+        }
+
+        #selectedtags{
+            color:#fff;
+            .fa{
+                margin-right: 10px;
+            }
+        }
+        #alltags{
+            display: none;
+            li{
+                color:#fff;
+                cursor: pointer;
+                &:hover{
+                    color:#9b59b6;
+                }
+            }
+        }
+    }
+    
+    #postText{
+        max-width: 720px;
+        margin:auto;
+        padding: 40px 0;
+
+        p{
+            font-family: 'Roboto', sans-serif;
+            font-weight: 300;
+            font-size:1.2em;
+            line-height: 1.5em;
+            color:#ddd;
+            margin-bottom: 30px;
+
+            strong{
+                font-weight:500;
+            }
+
+            &:last-of-type{
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    input,
+    textarea{
+        width:100%;
+        box-sizing: border-box;
+    }
+}
+
+#head_pic{
+    width: 100%;
+}
+
+.cke_wysiwyg_frame,
+.cke_inner,
+.cke_chrome,
+.cke_text{
+    background: transparent !important;
+    border: 0 !important;
+    margin: 0 !important;
+
+    width: 100% !important;
+}
+
+#postText_wrapper{
+    width:700px;
+    margin:auto;
+    padding: 60px 0;
+}
+.cover{
+
+   
+}

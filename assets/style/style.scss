@@ -1,0 +1,22 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+@import 'parts/topper';
+@import 'parts/startPage';
+@import 'parts/postPage';
+
+
+.inline{
+    li{
+        display: inline-block;
+        list-style-type: none;
+    }
+}
+
+.block{
+    li{
+        display: block;
+    }
+}

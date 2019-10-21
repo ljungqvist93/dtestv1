@@ -1,0 +1,210 @@
+* {
+  padding: 0;
+  margin: 0; }
+
+nav {
+  width: 20%;
+  margin: 2% 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  position: fixed; }
+  nav #floater {
+    float: right;
+    width: 300px; }
+    nav #floater h1 {
+      font-family: 'Pacifico', cursive;
+      font-weight: 400;
+      font-size: 2.5em;
+      width: 300px;
+      overflow: hidden;
+      background: #ee0979;
+      background: -webkit-linear-gradient(to right, #ff6a00, #ee0979);
+      background: linear-gradient(to right, #ff6a00, #ee0979);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent; }
+    nav #floater #menuList {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 300;
+      font-size: 2em;
+      color: #fff;
+      text-align: right;
+      margin: 20px 0; }
+      nav #floater #menuList li {
+        margin-bottom: 15px; }
+        nav #floater #menuList li:last-of-type {
+          margin-bottom: 0; }
+      nav #floater #menuList a {
+        text-decoration: none; }
+        nav #floater #menuList a:hover {
+          background: #bc4e9c;
+          /* fallback for old browsers */
+          background: -webkit-linear-gradient(to right, #f80759, #bc4e9c);
+          /* Chrome 10-25, Safari 5.1-6 */
+          background: linear-gradient(to right, #f80759, #bc4e9c);
+          /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent; }
+  nav #menuList {
+    padding: 40px 0; }
+  nav #theme {
+    text-align: right; }
+    nav #theme a {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.4em;
+      text-decoration: none; }
+      nav #theme a:hover {
+        color: #cf6a87; }
+
+main {
+  position: absolute;
+  right: 2%;
+  top: 0;
+  bottom: 0;
+  left: 25%; }
+
+article {
+  overflow: hidden;
+  margin-bottom: 100px;
+  position: relative; }
+  article:hover h1 {
+    background: #bc4e9c;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f80759, #bc4e9c);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f80759, #bc4e9c);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; }
+  article .postLink {
+    text-decoration: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    z-index: 1; }
+  article:first-of-type {
+    margin-top: 20px; }
+  article header {
+    overflow: hidden; }
+    article header h1 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 4.8em;
+      color: #fff;
+      z-index: 1; }
+    article header #dateViews_tags {
+      overflow: hidden;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.4em;
+      z-index: 22;
+      margin-top: 15px;
+      position: relative;
+      padding: 15px 0; }
+      article header #dateViews_tags #date a {
+        text-decoration: none; }
+      article header #dateViews_tags #dateViews {
+        float: left; }
+        article header #dateViews_tags #dateViews li {
+          margin-right: 15px; }
+      article header #dateViews_tags .fa-calendar-alt {
+        color: #18dcff;
+        margin-right: 5px; }
+      article header #dateViews_tags .fa-eye {
+        color: #cd84f1; }
+      article header #dateViews_tags #tags {
+        float: right; }
+        article header #dateViews_tags #tags li {
+          margin-left: 15px; }
+        article header #dateViews_tags #tags a {
+          text-decoration: none; }
+  article picture {
+    display: block;
+    margin-top: 20px;
+    height: 430px;
+    position: relative;
+    overflow: hidden; }
+    article picture img {
+      width: 100%;
+      display: block;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto; }
+
+#postPage {
+  margin-top: 20px; }
+  #postPage h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    color: #fff;
+    font-size: 4.8em;
+    background: #bc4e9c;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f80759, #bc4e9c);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f80759, #bc4e9c);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; }
+  #postPage #dateViews_tags {
+    overflow: hidden;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.4em;
+    z-index: 22;
+    margin-top: 15px;
+    position: relative;
+    padding: 15px 0; }
+    #postPage #dateViews_tags #date a {
+      text-decoration: none; }
+    #postPage #dateViews_tags #dateViews {
+      float: left; }
+      #postPage #dateViews_tags #dateViews li {
+        margin-right: 15px; }
+    #postPage #dateViews_tags .fa-calendar-alt {
+      color: #18dcff;
+      margin-right: 5px; }
+    #postPage #dateViews_tags .fa-eye {
+      color: #cd84f1; }
+    #postPage #dateViews_tags #tags {
+      float: right; }
+      #postPage #dateViews_tags #tags li {
+        margin-left: 15px; }
+      #postPage #dateViews_tags #tags a {
+        text-decoration: none; }
+  #postPage picture {
+    display: block;
+    margin-top: 20px; }
+    #postPage picture img {
+      width: 100%; }
+
+#postText {
+  width: 790px;
+  padding: 30px 0;
+  margin: auto; }
+  #postText h2 {
+    font-size: 1.9em;
+    font-size: 300;
+    font-family: 'Montserrat', sans-serif;
+    margin: 30px 0; }
+  #postText p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 300;
+    font-size: 1.2em;
+    line-height: 1.6em; }
+
+.cover {
+  display: block;
+  margin: 40px 0;
+  margin-left: -120px; }
+
+.inline li {
+  display: inline-block;
+  list-style-type: none; }
+
+.block li {
+  display: block; }
+
+/*# sourceMappingURL=style.css.map */

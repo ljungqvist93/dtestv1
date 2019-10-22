@@ -1,5 +1,4 @@
 <?= include 'assets/parts/head.php';
-    include 'engine/connect.php';
 
     $tagId = $_GET['type'];
     

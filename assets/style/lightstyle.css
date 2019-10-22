@@ -1,5 +1,5 @@
 body{
-    background-color: #F1F1F1;
+    background-color: #F8F8F6;
 }
 
 #coreSocials{
@@ -11,9 +11,20 @@ body{
 }
 
 main article h1{
-    color:#e77f67;
+    color:#2f3542;
 }
 
 nav a{
     color:#333 !important;
+}
+
+#dateViews_tags .fa-calendar-alt{
+    color:#c44569 !important;
+}
+#dateViews_tags #date a{
+    color:#000;
+}
+
+#tags a{
+    color:#000;
 }

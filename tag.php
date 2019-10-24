@@ -1,5 +1,4 @@
 <?= include 'assets/parts/head.php';
-    include 'engine/connect.php';
 
     if(!isset($_GET['id'])) {
         header('Location: /');

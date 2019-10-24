@@ -11,13 +11,25 @@
         ");
         $post->execute(['slug' => $slug]);
         $post = $post->fetch(PDO::FETCH_ASSOC);
+
+        $id = $post['id'];
+
+        $covers = $db->query("
+            SELECT postimages.*
+            FROM posts
+            JOIN postimages
+                ON posts.id = postimages.postId
+            WHERE posts.id = $id
+        ")->fetchAll(PDO::FETCH_ASSOC);
     } else {
         echo 'nope';
     }
 ?>
 <main id="postPage">
-    <picture>
-        <img src="<?= $post['coverImage']; ?>" alt="">
+    <picture id="caruselle" >
+        <?php foreach ($covers as $cover): ?>
+            <div><img src="engine/image/<?= $cover['imageName']; ?>" alt=""></div>
+        <?php endforeach; ?>
     </picture>
         <div id="dateViews_tags">
             <div id="dateViews">
@@ -35,7 +47,7 @@
                     </li>
                     <li id="views">
                         <i class="fad fa-eye"></i>
-                        434
+                        <?= $post['views'] ?>
                     </li>
                 </u>
             </div>
@@ -55,3 +67,5 @@
         <?= $post['postText'] ?>
     </div>
 </main>
+
+<?php include 'assets/parts/bottom.php'; ?>

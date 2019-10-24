@@ -1,4 +1,9 @@
 #overviewList{
+    margin-top: 50px;
+    .covers{
+        display: inline-block;
+        margin-right:20px;
+    }
     .options{
         margin: 0;
         padding: 0;
@@ -15,8 +20,8 @@
             color:#fff;
             text-decoration: none;
 
-            font-family: 'Roboto', sans-serif;
-            font-weight:300;
+            font-family: 'Montserrat', sans-serif;
+            font-weight:400;
             font-size:1em;
         }
     }

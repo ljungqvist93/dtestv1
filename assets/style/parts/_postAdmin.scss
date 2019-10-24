@@ -1,7 +1,8 @@
+#createPage{}
 #postAdmin,
 #createPage{
     #adminTools{
-        //display: none;
+        display: none;
         label{
             font-family: 'Roboto', sans-serif;
             font-weight: 300;
@@ -87,7 +88,20 @@
     margin:auto;
     padding: 60px 0;
 }
-.cover{
 
-   
+#toggleAdmin{
+    position: relative;
+}
+#imageToggler{
+    position: relative;
+    z-index: 99;
+}
+#imageIframe{
+    width:38%;
+    height:100%;
+    top: 0;
+    position: fixed;
+    background-color: #34495e;
+    z-index: 10;
+    display: none;
 }

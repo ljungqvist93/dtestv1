@@ -1,5 +1,7 @@
 <?php
-    include 'engine/connect.php';
+    if(!isset($subpage)) {
+        include 'engine/connect.php';
+    }
     $themes = [
         'light',
         'dark',
@@ -34,6 +36,7 @@
         <title>Daniel Ljungqvist</title>
 
         <link rel="stylesheet" href="/assets/style/style.css" type="text/css" />
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 
         <!-- Workaround default fallback if prefers-color-scheme is not supported -->
         <script>

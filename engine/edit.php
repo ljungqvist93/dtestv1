@@ -1,6 +1,7 @@
 <?php
 include 'connect.php';
     $subpage = 1;
+    $postId = $_GET['id'];
 
 	$post = $db->prepare("
         SELECT *
@@ -109,7 +110,9 @@ include 'connect.php';
             $postTags->execute(['post_id' => $id, 'tag_id' => $tagId]);
         }
         header("Refresh:0");
+        
     }
+    
     include '../assets/parts/head.php';    
 ?>
 <script type="text/javascript">
@@ -117,9 +120,13 @@ include 'connect.php';
 		document.getElementById('head_pic').setAttribute('src', url);
 	}
 </script>
+<div id="frameholder">
+<iframe id="imageIframe" src="images.php?id=<?= $postId; ?>&cover=0"></iframe>
+</div>
 <script src="https://www.danielljungqvist.se/ckeditor/ckeditor.js"></script>
 <div id="postAdmin" style="margin-top:150px;">
     <i class="fal fa-bars" id="toggleAdmin"></i>
+    <i class="fal fa-image" id="imageToggler"></i>
     <main>
     <form action="">
         <div class="wrapper">
@@ -163,19 +170,6 @@ include 'connect.php';
 				<div id="buttons">
 					<button type="submit" formaction="" formmethod="POST">Update post!</button>
 				</div>
-            </div>
-        </div>
-        <div class="wrapper">
-            <div id="head">
-            </div>
-            <div id="coverImg">
-                <img src="<?= $post['coverImage']; ?>" id="head_pic" />
-            </div>
-            <div id="postText_wrapper">
-                <textarea name="postText" id="text" cols="30" rows="10"><?php echo $post['postText']; ?></textarea>
-                <script>
-                    CKEDITOR.replace('text');
-                </script>
             </div>
         </div>
     </form>

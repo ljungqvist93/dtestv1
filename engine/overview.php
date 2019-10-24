@@ -1,6 +1,8 @@
 <?php
+    $subpage = 1;
+    include 'connect.php';
     include '../assets/parts/head.php';
-    $subpage = '1';
+    
 
     $saves = $db->query("
         SELECT * FROM posts ORDER BY created_at DESC
@@ -13,7 +15,7 @@
         <?php foreach ($saves as $post): ?>
             <li>
                 <ul class="options">
-                    <li><a href="edit.php?id=<?= $post['id']; ?>">edit</a></li>
+                    <li><a href="edit.php?id=<?= $post['id']; ?>&cover=0">edit</a></li>
                     <li><a href="del.php?id=<?= $post['id']; ?>">del</a></li>
                     <li>
                         <?php if ($post['published'] == 1): ?>
@@ -27,9 +29,10 @@
                         <?php endif; ?>
                     </li>
                 </ul>
-                <a href="../post.php?slug=<?= $post['slug']; ?>">
+                <a href="images.php?id=<?= $post['id']; ?>"><div class="covers">covers</div></a>
+                <a href="../post.php?slug=<?= $post['slug']; ?>&cover=0">
                     <?= $post['title']; ?>
-                </a>
+                </a> 
             </li>
         <?php endforeach; ?>
     </ul>

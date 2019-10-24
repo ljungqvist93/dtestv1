@@ -56,6 +56,99 @@ nav {
       nav #theme a:hover {
         color: #cf6a87; }
 
+#postAdmin #adminTools,
+#createPage #adminTools {
+  display: none; }
+  #postAdmin #adminTools label,
+  #createPage #adminTools label {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: #fff;
+    font-size: 1.2em;
+    padding: 20px 0;
+    display: block; }
+  #postAdmin #adminTools input,
+  #createPage #adminTools input {
+    padding: 15px;
+    box-sizing: border-box;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300; }
+  #postAdmin #adminTools #selectedtags,
+  #createPage #adminTools #selectedtags {
+    color: #fff; }
+    #postAdmin #adminTools #selectedtags .fa,
+    #createPage #adminTools #selectedtags .fa {
+      margin-right: 10px; }
+  #postAdmin #adminTools #alltags,
+  #createPage #adminTools #alltags {
+    display: none; }
+    #postAdmin #adminTools #alltags li,
+    #createPage #adminTools #alltags li {
+      color: #fff;
+      cursor: pointer; }
+      #postAdmin #adminTools #alltags li:hover,
+      #createPage #adminTools #alltags li:hover {
+        color: #9b59b6; }
+#postAdmin #postText,
+#createPage #postText {
+  max-width: 720px;
+  margin: auto;
+  padding: 40px 0; }
+  #postAdmin #postText p,
+  #createPage #postText p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 1.2em;
+    line-height: 1.5em;
+    color: #ddd;
+    margin-bottom: 30px; }
+    #postAdmin #postText p strong,
+    #createPage #postText p strong {
+      font-weight: 500; }
+    #postAdmin #postText p:last-of-type,
+    #createPage #postText p:last-of-type {
+      margin-bottom: 0; }
+#postAdmin input,
+#postAdmin textarea,
+#createPage input,
+#createPage textarea {
+  width: 100%;
+  box-sizing: border-box; }
+
+#head_pic {
+  width: 100%; }
+
+.cke_wysiwyg_frame,
+.cke_inner,
+.cke_chrome,
+.cke_text {
+  background: transparent !important;
+  border: 0 !important;
+  margin: 0 !important;
+  width: 100% !important; }
+
+#postText_wrapper {
+  width: 700px;
+  margin: auto;
+  padding: 60px 0; }
+
+#toggleAdmin {
+  position: relative; }
+
+#imageToggler {
+  position: relative;
+  z-index: 99; }
+
+#imageIframe {
+  width: 38%;
+  height: 100%;
+  top: 0;
+  position: fixed;
+  background-color: #34495e;
+  z-index: 10;
+  display: none; }
+
 main {
   position: absolute;
   right: 2%;
@@ -134,51 +227,72 @@ article {
       right: 0;
       margin: auto; }
 
-#postPage {
-  margin-top: 20px; }
-  #postPage h1 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 900;
-    color: #fff;
-    font-size: 4.8em;
-    background: #bc4e9c;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #f80759, #bc4e9c);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #f80759, #bc4e9c);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; }
-  #postPage #dateViews_tags {
-    overflow: hidden;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.4em;
-    z-index: 22;
-    margin-top: 15px;
-    position: relative;
-    padding: 15px 0; }
-    #postPage #dateViews_tags #date a {
+#postPage h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  color: #fff;
+  font-size: 4.8em;
+  background: #bc4e9c;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #f80759, #bc4e9c);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #f80759, #bc4e9c);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
+#postPage #dateViews_tags {
+  overflow: hidden;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.4em;
+  z-index: 22;
+  margin-top: 15px;
+  position: relative;
+  padding: 30px 0; }
+  #postPage #dateViews_tags #date a {
+    text-decoration: none; }
+  #postPage #dateViews_tags #dateViews {
+    float: left; }
+    #postPage #dateViews_tags #dateViews li {
+      margin-right: 15px; }
+  #postPage #dateViews_tags .fa-calendar-alt {
+    color: #18dcff;
+    margin-right: 5px; }
+  #postPage #dateViews_tags .fa-eye {
+    color: #cd84f1; }
+  #postPage #dateViews_tags #tags {
+    float: right; }
+    #postPage #dateViews_tags #tags li {
+      margin-left: 15px; }
+    #postPage #dateViews_tags #tags a {
       text-decoration: none; }
-    #postPage #dateViews_tags #dateViews {
-      float: left; }
-      #postPage #dateViews_tags #dateViews li {
-        margin-right: 15px; }
-    #postPage #dateViews_tags .fa-calendar-alt {
-      color: #18dcff;
-      margin-right: 5px; }
-    #postPage #dateViews_tags .fa-eye {
-      color: #cd84f1; }
-    #postPage #dateViews_tags #tags {
-      float: right; }
-      #postPage #dateViews_tags #tags li {
-        margin-left: 15px; }
-      #postPage #dateViews_tags #tags a {
-        text-decoration: none; }
-  #postPage picture {
+#postPage #caruselle {
+  margin-top: 40px;
+  max-width: 100%; }
+  #postPage #caruselle div {
+    height: 44.5vw;
+    width: 100%;
+    position: relative; }
+  #postPage #caruselle img {
+    position: absolute;
     display: block;
-    margin-top: 20px; }
-    #postPage picture img {
-      width: 100%; }
+    margin: auto;
+    width: 111%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0; }
+
+.slick-dots {
+  display: none;
+  position: absolute;
+  bottom: 0; }
+  .slick-dots li {
+    display: inline-block;
+    list-style: none; }
+    .slick-dots li button {
+      background-color: #ddd;
+      border: none;
+      padding: 10px; }
 
 #postText {
   width: 790px;
@@ -206,6 +320,28 @@ article {
   display: block;
   margin: 40px 0;
   margin-left: -120px; }
+
+#overviewList {
+  margin-top: 50px; }
+  #overviewList .covers {
+    display: inline-block;
+    margin-right: 20px; }
+  #overviewList .options {
+    margin: 0;
+    padding: 0; }
+    #overviewList .options li {
+      display: inline-block;
+      margin: 0;
+      padding: 0; }
+  #overviewList li {
+    display: block;
+    margin-bottom: 20px; }
+    #overviewList li a {
+      color: #fff;
+      text-decoration: none;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 400;
+      font-size: 1em; }
 
 .inline li {
   display: inline-block;

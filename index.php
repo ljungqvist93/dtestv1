@@ -20,7 +20,7 @@
                             <ul class="inline">
                                 <li id="date">
                                     <i class="fad fa-calendar-alt"></i>
-                                    <?= human_readable_time_diff($post['created_at']); ?> in 
+                                     in 
                                     <strong>
                                         <?php if ($post['section'] === '1'): ?>
                                             <a href="section.php?type=0">Guide</a>
@@ -31,7 +31,7 @@
                                 </li>
                                 <li id="views">
                                     <i class="fad fa-eye"></i>
-                                    434
+                                    <?= $post['views']; ?>
                                 </li>
                             </ul>
                         </div>

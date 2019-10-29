@@ -1,0 +1,29 @@
+#postText iframe,
+#postText img {
+  max-width: 100%; }
+#postText h2 {
+  font-size: 1.9em;
+  font-size: 300;
+  font-family: 'Montserrat', sans-serif;
+  margin: 30px 0; }
+#postText p, #postText ul, #postText li, #postText a {
+  font-size: 1em; }
+#postText p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1em;
+  font-weight: 300;
+  border-bottom: 30px; }
+  #postText p:last-of-type {
+    border-bottom: 0; }
+#postText p, #postText ul, #postText ol, #postText a {
+  color: #fff; }
+#postText a {
+  text-decoration: underline; }
+#postText blockquote {
+  padding: 40px;
+  font-style: italic;
+  background-color: #e17055; }
+#postText p > iframe {
+  margin: 0; }
+
+/*# sourceMappingURL=_adminStyle.css.map */

@@ -27,16 +27,19 @@
         header('Location: '.$location);
         die();
     }
+    
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
-
     <head>
-        <title>Daniel Ljungqvist</title>
-
+        <?php if($postPage != 1): ?> <title>Daniel Ljungqvist</title> <?php endif; ?>
+        <link rel="icon" href="/assets/favicon.png" type="image/x-icon" />
         <link rel="stylesheet" href="/assets/style/style.css" type="text/css" />
         <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.11.2/css/all.css" integrity="sha384-zrnmn8R8KkWl12rAZFt4yKjxplaDaT7/EUkKm7AovijfrQItFWR7O/JJn4DAa/gx" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:300,900|Pacifico:400&display=swap" rel="stylesheet" />
+        <meta data-n-head="true" name="viewport" content="width=device-width, initial-scale=1"/>
 
         <!-- Workaround default fallback if prefers-color-scheme is not supported -->
         <script>
@@ -78,37 +81,13 @@
             <link rel="stylesheet" href="/assets/style/lightstyle.css" type="text/css" media="(prefers-color-scheme: no-preference), (prefers-color-scheme: light)" />
             <link rel="stylesheet" href="/assets/style/darkstyle.css" type="text/css" media="(prefers-color-scheme: dark)" />
         <?php endif; ?>
-        <link rel="icon" href="/assets/favicon.png" type="image/x-icon" />
 
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:300,900|Pacifico:400&display=swap" rel="stylesheet" />
-        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.11.2/css/all.css" integrity="sha384-zrnmn8R8KkWl12rAZFt4yKjxplaDaT7/EUkKm7AovijfrQItFWR7O/JJn4DAa/gx" crossorigin="anonymous">
-
-        <meta data-n-head="true" name="viewport" content="width=device-width, initial-scale=1"/>
-    </head>
-
-    <body>
-
-    <nav>
-        <div id="floater">
-            <h1><a href="index.php">Daniel Ljungqvist</a></h1>
-            <ul id="menuList" class="block">
-                <li><a href="about.php">about me</a></li>
-                <li><a href="section.php?type=0">guides</a></li>
-                <li><a href="section.php?type=1">articles</a></li>
-                <li></li>
-            </ul>
-            <div id="theme">
-                <?php if(is_theme('light')): ?>
-                    <a href="<?= build_theme_link('dark'); ?>" class="<?= is_theme('dark') ? 'themeselected' : '' ?>">
-                        <i class="fal fa-toggle-off"></i>
-                        Dark
-                    </a>
-                <?php else: ?>
-                    <a href="<?= build_theme_link('light'); ?>" class="<?= is_theme('light') ? 'themeselected' : '' ?>">
-                    <i class="fal fa-toggle-on"></i>
-                        Dark
-                    </a>
-                <?php endif; ?>
-            </div>
-        </div>
-    </nav>
+        <?php if($postPage != 1): ?>
+        </head>
+        <body>
+        <?php endif; ?>
+        <?php
+            if ($postPage != 1) {
+                include 'menu.php';
+            }
+        ?>

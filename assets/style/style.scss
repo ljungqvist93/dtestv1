@@ -7,7 +7,7 @@
 @import 'parts/postAdmin';
 @import 'parts/startPage';
 @import 'parts/postPage';
-@import 'parts/overview';
+@import 'parts/about';
 
 
 .inline{
@@ -21,4 +21,12 @@
     li{
         display: block;
     }
+}
+
+.mt40{
+    margin-top: 40px;
+}
+
+.mt60{
+    margin-top: 60px;
 }

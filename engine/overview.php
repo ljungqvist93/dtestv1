@@ -15,7 +15,7 @@
         <?php foreach ($saves as $post): ?>
             <li>
                 <ul class="options">
-                    <li><a href="edit.php?id=<?= $post['id']; ?>&cover=0">edit</a></li>
+                    <li><a href="edit.php?id=<?= $post['id']; ?>">edit</a></li>
                     <li><a href="del.php?id=<?= $post['id']; ?>">del</a></li>
                     <li>
                         <?php if ($post['published'] == 1): ?>

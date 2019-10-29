@@ -112,6 +112,14 @@ include 'connect.php';
         header("Refresh:0");
         
     }
+
+        $covers = $db->query("
+            SELECT postimages.*, posts.*
+            FROM posts
+            JOIN postimages
+                ON posts.id = postimages.postId
+            WHERE posts.id = $postId AND cover = 1
+        ")->fetchAll(PDO::FETCH_ASSOC);
     
     include '../assets/parts/head.php';    
 ?>
@@ -127,17 +135,17 @@ include 'connect.php';
 <div id="postAdmin" style="margin-top:150px;">
     <i class="fal fa-bars" id="toggleAdmin"></i>
     <i class="fal fa-image" id="imageToggler"></i>
-    <main>
+    <main id="edit">
     <form action="">
         <div class="wrapper">
             <div id="adminTools">
                 <input type="hidden" name="id" value="<?php echo $post['id']; ?>">
 				<div id="pictures">
-					<label for="">Bild på postsidan</label>
+					<label for="">Stor bild</label>
 					<input type="text" name="coverImage" id="coverImage" value="<?php echo $post['coverImage']; ?>" />
 					<input type="button" value="Use" id="coverImageButton" onclick="loadImage(document.getElementById('coverImage').value)" />
 								
-					<label for="thumbImage">Bild på förstasidan</label>
+					<label for="thumbImage">Mobilbild</label>
 					<input type="text" name="thumbImage" value="<?php echo $post['thumbImage']; ?>">
 
 					<label for="slug">URL</label>
@@ -166,11 +174,22 @@ include 'connect.php';
                         </div>
                     </div>
                 </div>
-                <input name="title" id="editTitle" value="<?= $post['title']; ?>">
 				<div id="buttons">
 					<button type="submit" formaction="" formmethod="POST">Update post!</button>
 				</div>
             </div>
+        </div>
+        <div id="caruselle">
+            <?php foreach ($covers as $cover): ?>
+                <div><img src="image/<?= $cover['imageName']; ?>" alt=""></div>
+            <?php endforeach; ?>
+        </div>
+        <textarea name="title" id="editTitle"><?= $post['title']; ?></textarea>
+        <div id="textField">
+            <textarea name="postText" id="text" cols="30" rows="10"><?= $post['postText']; ?></textarea>
+            <script>
+                CKEDITOR.replace('text');
+            </script>
         </div>
     </form>
 </main>

@@ -59,6 +59,10 @@
                 margin-bottom: 0;
             }
         }
+
+        img{
+            max-width:100%;
+        }
     }
 
     input,
@@ -104,4 +108,56 @@
     background-color: #34495e;
     z-index: 10;
     display: none;
+}
+
+.iframe{
+    max-width:100%;
+}
+
+#edit{
+    
+    #caruselle{
+        margin-top: 40px;
+        max-width:100%;
+
+        @media screen and (max-width:600px){
+            display: none;
+        }
+        div{
+            height:44.5vw;
+            width:100%;
+            position: relative;
+        }
+        img{
+            position: absolute;
+            display: block;
+            margin:auto;
+            width:111%;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+        }
+    }
+}
+
+#textField{
+    width:740px;
+    margin:auto;
+    margin-top: 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight:300;
+}
+
+#editTitle{
+    font-family: 'Montserrat', sans-serif;
+    font-size:4.8em;
+    font-weight:900;
+    background: #bc4e9c;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f80759, #bc4e9c);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f80759, #bc4e9c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 20px;
+    border:none;
 }

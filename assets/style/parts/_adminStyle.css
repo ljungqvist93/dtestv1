@@ -1,29 +1,49 @@
-#postText iframe,
-#postText img {
+iframe,
+img {
   max-width: 100%; }
-#postText h2 {
+
+h2 {
   font-size: 1.9em;
   font-size: 300;
   font-family: 'Montserrat', sans-serif;
-  margin: 30px 0; }
-#postText p, #postText ul, #postText li, #postText a {
-  font-size: 1em; }
-#postText p {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1em;
-  font-weight: 300;
-  border-bottom: 30px; }
-  #postText p:last-of-type {
-    border-bottom: 0; }
-#postText p, #postText ul, #postText ol, #postText a {
+  margin: 60px 0 30px 0;
   color: #fff; }
-#postText a {
+
+p, ul, li, a {
+  font-size: 1em; }
+
+.twitter-tweet {
+  margin: auto;
+  padding: 30px 0; }
+
+p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2em;
+  font-weight: 300;
+  line-height: 1.6em;
+  margin-bottom: 30px; }
+  p:last-of-type {
+    margin-bottom: 0; }
+
+.large {
+  max-width: 1374px; }
+
+strong {
+  font-weight: 900; }
+
+p, ul, ol, a {
+  color: #fff; }
+
+a {
   text-decoration: underline; }
-#postText blockquote {
+
+blockquote {
   padding: 40px;
   font-style: italic;
-  background-color: #e17055; }
-#postText p > iframe {
+  background-color: #e17055;
+  margin: 30px 0; }
+
+p > iframe {
   margin: 0; }
 
 /*# sourceMappingURL=_adminStyle.css.map */

@@ -5,37 +5,68 @@
     
 
     $saves = $db->query("
-        SELECT * FROM posts ORDER BY created_at DESC
+        SELECT * FROM posts WHERE published = 0 ORDER BY created_at DESC
+    ")->fetchAll(PDO::FETCH_ASSOC);
+
+
+    $published = $db->query("
+        SELECT * FROM posts WHERE published = 1 ORDER BY created_at DESC
     ")->fetchAll(PDO::FETCH_ASSOC);
 
 ?>
-<main>
+<main id="overviewPage">
 <div class="wrapper">
-    <ul id="overviewList">
-        <?php foreach ($saves as $post): ?>
-            <li>
-                <ul class="options">
-                    <li><a href="edit.php?id=<?= $post['id']; ?>">edit</a></li>
-                    <li><a href="del.php?id=<?= $post['id']; ?>">del</a></li>
-                    <li>
-                        <?php if ($post['published'] == 1): ?>
-                            <a href="publish.php?id=<?php echo $post['id']; ?>">
-                                published
-                            </a>
-                        <?php else: ?>
-                            <a href="publish.php?id=<?php echo $post['id']; ?>">
-                                not published
-                            </a>
-                        <?php endif; ?>
-                    </li>
-                </ul>
-                <a href="images.php?id=<?= $post['id']; ?>"><div class="covers">covers</div></a>
-                <a href="../post.php?slug=<?= $post['slug']; ?>&cover=0">
-                    <?= $post['title']; ?>
-                </a> 
-            </li>
-        <?php endforeach; ?>
-    </ul>
+    <?php foreach ($saves as $save): ?>
+        <article>
+            <div class="postCover">
+                <a href="edit.php?id=<?= $save['id']; ?>">
+                    <img src="<?= $save['thumbImage']; ?>" alt="">
+                </a>
+            </div>
+            <div class="postDesc">
+                <h2><a href="../post.php?slug=<?= $save['slug']; ?>"><?= $save['title']; ?></a></h2>
+                
+                <?php if ($save['published'] == 1): ?>
+                    <a href="publish.php?id=<?= $save['id']; ?>">
+                        Published
+                    </a>
+                <?php else: ?>
+                    <a href="publish.php?id=<?= $save['id']; ?>">
+                        Not published
+                    </a>
+                <?php endif; ?>
+                <a href="">
+                    <i class="fas fa-trash-alt"></i>
+                </a>
+            </div>
+        </article>
+    <?php endforeach; ?>
+<br><br><br><br><br><br><br><br>
+    <?php foreach ($published as $save): ?>
+        <article>
+            <div class="postCover">
+                <a href="edit.php?id=<?= $save['id']; ?>">
+                    <img src="<?= $save['thumbImage']; ?>" alt="">
+                </a>
+            </div>
+            <div class="postDesc">
+                <h2><a href="../post.php?slug=<?= $save['slug']; ?>"><?= $save['title']; ?></a></h2>
+                
+                <?php if ($save['published'] == 1): ?>
+                    <a href="publish.php?id=<?= $save['id']; ?>">
+                        Published
+                    </a>
+                <?php else: ?>
+                    <a href="publish.php?id=<?= $save['id']; ?>">
+                        Not published
+                    </a>
+                <?php endif; ?>
+                <a href="">
+                    <i class="fas fa-trash-alt"></i>
+                </a>
+            </div>
+        </article>
+    <?php endforeach; ?>
 </div>
 </main>
 <?php include '../assets/parts/bottom.php'; ?>

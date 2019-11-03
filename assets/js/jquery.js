@@ -3,7 +3,7 @@ $('#toggleAdmin').on('click', function() {
 });
 
 $('#imageToggler').on('click', function () {
-    $('#imageIframe').slideToggle();
+    $('#imageIframe').slideToggle(1);
 });
 
 $('.fa-bars').on('click', function() {

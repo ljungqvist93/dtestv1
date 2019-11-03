@@ -37,25 +37,29 @@
     <?php foreach ($posts as $post) :?>
         <article>
             <a href="post.php?slug=<?= $post['slug']; ?>" class="postLink"></a>
+                <picture>
+                    <source srcset="<?= $post['thumbImage']; ?>" media="(max-width:600px)">
+                    <source srcset="<?= $post['coverImage']; ?>" media="(min-width:601px)">
+                    <img src="<?= $post['thumbImage']; ?>" alt="">
+                </picture>
                 <header>
-                    <h1><?= $post['title']; ?></h1>
                     <div id="dateViews_tags">
                         <div id="dateViews">
                             <ul class="inline">
                                 <li id="date">
                                     <i class="fad fa-calendar-alt"></i>
-                                    <?= human_readable_time_diff($post['created_at']); ?> in 
+                                    in 
                                     <strong>
                                         <?php if ($post['section'] === '1'): ?>
-                                            <a href="">Guide</a>
+                                            <a href="section.php?type=0">Guide</a>
                                         <?php else: ?>
-                                            <a href="">Article</a>
+                                            <a href="section.php?type=1">Article</a>
                                         <?php endif; ?>
                                     </strong>
                                 </li>
                                 <li id="views">
                                     <i class="fad fa-eye"></i>
-                                    434
+                                    <?= $post['views']; ?>
                                 </li>
                             </ul>
                         </div>
@@ -68,10 +72,8 @@
                             </ul>
                         </div>
                     </div>
+                    <h1><?= $post['title']; ?></h1>
                 </header>
-                <picture>
-                    <img src="<?= $post['coverImage']; ?>" alt="">
-                </picture>
         </article>
     <?php endforeach; ?>
 </main>

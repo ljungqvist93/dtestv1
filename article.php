@@ -8,7 +8,7 @@
         $post = $db->prepare("
             SELECT *
             FROM posts
-            WHERE slug = :slug
+            WHERE slug = :slug AND section = 0
             LIMIT 1
         ");
         $post->execute(['slug' => $slug]);
@@ -104,7 +104,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.danielljungqvist.se/post.php?slug%3D<?= $post['slug']; ?>">
+                    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.danielljungqvist.se/post.php?slug=<?= $post['slug']; ?>">
                         <i class="fab fa-linkedin"></i>
                     </a>
                 </li>

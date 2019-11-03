@@ -1,0 +1,51 @@
+#overviewPage{
+    margin-top: 50px;
+    article{
+        display: block;
+        margin-bottom: 30px;
+        .postCover{
+            width:60px;
+            height:60px;
+            border-radius:100%;
+            overflow: hidden;
+            position: relative;
+            float:left;
+            img{
+                width:150%;
+                position: absolute;
+                left: -100%;
+                right: -100%;
+                bottom: 0;
+                top: 0;
+                margin:auto;
+                display: block;
+            }
+        }
+
+        .postDesc{
+            float:left;
+            padding:4px 15px;
+            position: relative;
+            width:80%;
+            h2 a{
+                font-family: 'Montserrat', sans-serif;
+                font-weight:900;
+                &:hover{
+                    color:lightcoral;
+                }
+            }
+
+            a{
+                display: inline-block;
+                font-family: 'Montserrat', sans-serif;
+                font-weight:300;
+                text-decoration: none;
+            }
+            .fas{
+                position: absolute;
+                right: 0;
+                top: 15px;
+            }
+        }
+    }
+}

@@ -120,6 +120,8 @@
 }
 
 #postText{
+    max-width:720px;
+    margin:auto;
     #share{
         margin-bottom: 15px;
         li{
@@ -135,49 +137,7 @@
     @media screen and (min-width: 601px) {
         padding: 60px 0;
     }
-    iframe,
-    img{
-        max-width:100%;
-    }
-    h2{
-        font-size:1.9em;
-        font-size:300;
-        font-family: 'Montserrat', sans-serif;
-        margin: 30px 0;
-    }
-    p,ul,li,a{
-        font-size:1em;
-    }
-    p{
-        font-family: 'Montserrat', sans-serif;
-        font-size:1.2em;
-        font-weight:300;
-        line-height: 1.6em;
-        max-width:720px;
-        margin:auto;
-        margin-bottom:30px;
-        &:last-of-type{
-            margin-bottom: 0;
-        }
-    }
-    .large{
-        max-width:1374px;
-    }
-    p,ul,ol,a{
-        color:#fff;
-    }
-    a{
-        text-decoration: underline;
-    }
-    blockquote{
-        padding: 40px;
-        font-style: italic;
-        background-color: #e17055;
-        margin: 30px 0;
-    }
-    p>iframe{
-        margin:0;
-    }
+    @import 'adminStyle';
 }
 
 .cover{

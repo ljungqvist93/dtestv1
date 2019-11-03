@@ -1,38 +1,49 @@
-#postText{
-    iframe,
-    img{
-        max-width:100%;
+iframe,
+img{
+    max-width:100%;
+}
+h2{
+    font-size:1.9em;
+    font-size:300;
+    font-family: 'Montserrat', sans-serif;
+    margin: 60px 0 30px 0;
+    color:#fff;
+}
+p,ul,li,a{
+    font-size:1em;
+}
+.twitter-tweet{
+    margin:auto;
+    padding:30px 0;
+}
+p{
+    font-family: 'Montserrat', sans-serif;
+    font-size:1.2em;
+    font-weight:300;
+    line-height: 1.6em;
+    margin-bottom:30px;
+    &:last-of-type{
+        margin-bottom: 0;
     }
-    h2{
-        font-size:1.9em;
-        font-size:300;
-        font-family: 'Montserrat', sans-serif;
-        margin: 30px 0;
-    }
-    p,ul,li,a{
-        font-size:1em;
-    }
-    p{
-        font-family: 'Montserrat', sans-serif;
-        font-size:1em;
-        font-weight:300;
-        border-bottom:30px;
-        &:last-of-type{
-            border-bottom: 0;
-        }
-    }
-    p,ul,ol,a{
-        color:#fff;
-    }
-    a{
-        text-decoration: underline;
-    }
-    blockquote{
-        padding: 40px;
-        font-style: italic;
-        background-color: #e17055;
-    }
-    p>iframe{
-        margin:0;
-    }
+}
+.large{
+    max-width:1374px;
+}
+strong{
+    font-weight:900;
+}
+p,ul,ol,a{
+    color:#fff;
+}
+a{
+    text-decoration: underline;
+}
+blockquote{
+    padding: 40px;
+    font-style: italic;
+    background-color: #e17055;
+    margin: 30px 0;
+}
+p>iframe{
+    margin:0;
 }

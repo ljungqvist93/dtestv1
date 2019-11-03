@@ -11,7 +11,7 @@
     <div class="mt40">
         <?php foreach ($posts as $post) :?>
             <article>
-                <a href="post.php?slug=<?= $post['slug']; ?>" class="postLink"></a>
+                    <a href="post.php?slug=<?= $post['slug']; ?>" class="postLink"></a>
                     <picture>
                         <source srcset="<?= $post['thumbImage']; ?>" media="(max-width:600px)">
                         <source srcset="<?= $post['coverImage']; ?>" media="(min-width:601px)">

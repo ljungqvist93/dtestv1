@@ -1,7 +1,9 @@
 
             <nav id="mainMenu">
                 <div id="floater">
-                    <h1><a href="index.php">Daniel Ljungqvist</a></h1>
+                    <h1>
+                        <a href="<?php if($subpage == 1): ?>../index.php<?php else: ?>index.php<?php endif; ?>">Daniel Ljungqvist</a>
+                    </h1>
                     <i class="fas fa-bars"></i>
                     <div id="responsiveDesign">
                         <ul id="menuList" class="block">

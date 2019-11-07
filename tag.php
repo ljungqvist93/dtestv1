@@ -48,7 +48,7 @@
                             <ul class="inline">
                                 <li id="date">
                                     <i class="fad fa-calendar-alt"></i>
-                                    in 
+                                    <?= human_readable_time_diff($post['created_at']); ?> in 
                                     <strong>
                                         <?php if ($post['section'] === '1'): ?>
                                             <a href="section.php?type=0">Guide</a>

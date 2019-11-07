@@ -520,6 +520,21 @@ article {
   #mScale {
     display: none; } }
 
+#disqus_thread {
+  width: 720px;
+  margin: auto;
+  margin-top: 60px; }
+
+#line {
+  max-width: 720px;
+  margin: auto; }
+  #line:after {
+    content: "";
+    display: block;
+    width: 60%;
+    height: 2px;
+    background-color: #fff; }
+
 #about h1 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 900;

@@ -115,6 +115,18 @@
         </nav>
         <?= $post['postText'] ?>
     </div>
-</main>
+    <div id="line"></div>
+    <div id="disqus_thread"></div>
+    <script>
+        (function() {
+        var d = document, s = d.createElement('script');
+        s.src = 'https://danielljungqvistse.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 
+</main>
+<script id="dsq-count-scr" src="//danielljungqvistse.disqus.com/count.js" async></script>
 <?php include 'assets/parts/bottom.php'; ?>

@@ -1,4 +1,6 @@
-<?= include 'assets/parts/head.php';
+<?php 
+    $postPage = 0;
+    require 'assets/parts/head.php';
 
     $posts = $db->query("
 		SELECT *
@@ -9,7 +11,7 @@
 ?>
 <main>
     <div class="mt40">
-        <?php foreach ($posts as $post) :?>
+        <?php foreach ($posts as $post): ?>
             <article>
                     <a href="post.php?slug=<?= $post['slug']; ?>" class="postLink"></a>
                     <picture>
@@ -23,7 +25,7 @@
                                 <ul class="inline">
                                     <li id="date">
                                         <i class="fad fa-calendar-alt"></i>
-                                        in 
+                                        <?= human_readable_time_diff($post['created_at']); ?> in 
                                         <strong>
                                             <?php if ($post['section'] === '1'): ?>
                                                 <a href="section.php?type=0">Guide</a>

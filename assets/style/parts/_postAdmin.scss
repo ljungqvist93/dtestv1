@@ -94,11 +94,13 @@
 }
 
 #toggleAdmin{
-    position: relative;
+    position: fixed;
+    z-index:99;
 }
 #imageToggler{
-    position: relative;
+    position: fixed;
     z-index: 99;
+    margin-left: 25px;
 }
 #imageIframe{
     width:38%;

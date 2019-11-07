@@ -154,8 +154,13 @@ include 'connect.php';
 				</div>
 				<div id="selects">
 					<select name="section" id="section">
-						<option value="0">Guide</option>
-						<option value="1">Artikel</option>
+                        <?php if ($post['section'] == 0): ?>
+    						<option value="0">artiel</option>
+    						<option value="1">guide</option>
+                        <?php else: ?>
+                            <option value="1">guide</option>
+                            <option value="0">artikel</option>
+                        <?php endif; ?>
 					</select>
                 </div>
                 <div id="tags" style="margin: 10px 0px;">

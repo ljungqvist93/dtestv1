@@ -79,8 +79,7 @@
   @media screen and (max-width: 1300px) {
     #mainMenu {
       width: 90%;
-      margin: auto;
-      padding-top: 10px; }
+      margin: auto; }
       #mainMenu .fas {
         float: right;
         font-size: 2em;
@@ -190,11 +189,13 @@
   padding: 60px 0; }
 
 #toggleAdmin {
-  position: relative; }
+  position: fixed;
+  z-index: 99; }
 
 #imageToggler {
-  position: relative;
-  z-index: 99; }
+  position: fixed;
+  z-index: 99;
+  margin-left: 25px; }
 
 #imageIframe {
   width: 38%;
@@ -342,7 +343,6 @@ article {
           text-decoration: none; }
   article picture {
     display: block;
-    margin-top: 20px;
     position: relative;
     overflow: hidden; }
     @media screen and (max-width: 600px) {
@@ -521,7 +521,7 @@ article {
     display: none; } }
 
 #disqus_thread {
-  width: 720px;
+  max-width: 720px;
   margin: auto;
   margin-top: 60px; }
 
@@ -594,6 +594,9 @@ article {
 
 .mt40 {
   margin-top: 40px; }
+  @media screen and (max-width: 600px) {
+    .mt40 {
+      margin-top: 20px; } }
 
 .mt60 {
   margin-top: 60px; }

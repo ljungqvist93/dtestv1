@@ -26,6 +26,10 @@
 
 .mt40{
     margin-top: 40px;
+
+    @media screen and (max-width:600px){
+        margin-top: 20px;
+    }
 }
 
 .mt60{

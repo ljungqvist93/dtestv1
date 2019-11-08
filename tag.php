@@ -40,3 +40,5 @@
         <?php endforeach; ?>
     </div>
 </main>
+
+<?php include 'assets/parts/bottom.php'; ?>

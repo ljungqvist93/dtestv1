@@ -14,9 +14,9 @@
                             <?= human_readable_time_diff($post['created_at']); ?> in 
                             <strong>
                                 <?php if ($post['section'] === '1'): ?>
-                                    <a href="section.php?type=0">Guide</a>
+                                    <a href="section.php?type=0">guides</a>
                                 <?php else: ?>
-                                    <a href="section.php?type=1">Article</a>
+                                    <a href="section.php?type=1">articles</a>
                                 <?php endif; ?>
                             </strong>
                         </li>

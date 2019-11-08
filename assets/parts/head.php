@@ -41,7 +41,9 @@
         <link href="https://fonts.googleapis.com/css?family=Montserrat:300,900|Pacifico:400&display=swap" rel="stylesheet" />
         <meta data-n-head="true" name="viewport" content="width=device-width, initial-scale=1"/>
 
-        <!-- Workaround default fallback if prefers-color-scheme is not supported -->
+        <meta name="description" content="Daniel Ljungqvist provides really rad, easy and interesting guides and articles about technology, IT, and much more!" />
+
+
         <script>
             function getCookie(cname) {
                 var name = cname + "=";
@@ -59,19 +61,15 @@
                 return "";
             }
             if(window.matchMedia('(prefers-color-scheme').media === 'not all' && getCookie('theme') !== 'dark') {
-                // Get HTML head element
                 var head = document.getElementsByTagName('HEAD')[0];
-                // Create new link Element
                 var link = document.createElement('link');
-                // set the attributes for link element
                 link.rel = 'stylesheet';
                 link.type = 'text/css';
                 link.href = '/assets/style/lightstyle.css';
-                // Append link element to HTML head
                 head.appendChild(link);
             }
         </script>
-        <!-- End of workaround -->
+
 
         <?php if($theme === 'light'): ?>
             <link rel="stylesheet" href="/assets/style/lightstyle.css" type="text/css" />

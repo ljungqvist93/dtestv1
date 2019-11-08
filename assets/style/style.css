@@ -330,7 +330,7 @@ article {
   position: relative; }
   @media screen and (max-width: 600px) {
     article {
-      margin-bottom: 30px; } }
+      margin-bottom: 60px; } }
   @media screen and (min-width: 601px) {
     article {
       margin-bottom: 100px; } }
@@ -487,6 +487,14 @@ article {
   #postText iframe,
   #postText img {
     max-width: 100%; }
+  @media screen and (max-width: 600px) {
+    #postText .ytvid {
+      height: 57vw; } }
+  @media screen and (min-width: 601px) {
+    #postText .ytvid {
+      height: 450px; } }
+  #postText #player {
+    display: none; }
   #postText h2 {
     font-size: 1.9em;
     font-size: 300;

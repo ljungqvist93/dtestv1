@@ -37,7 +37,6 @@
 <meta property="og:title" content="<?= $post['title']; ?>" />
 <meta property="og:image" content="<?= $post['coverImage']; ?>" />
 <meta property="og:url" content="https://www.danielljungqvist.se/post.php?slug=<?= $post['slug']; ?>" />
-<meta property="og:description" content="" />
 <meta name="author" content="danielljungqvist.se" />
 
 <meta name="twitter:title" content="<?= $post['title']; ?>" />
@@ -89,7 +88,7 @@
             </div>
         </div>
         <header>
-            <h1><?= $post['title']; ?></h1>
+            <h2><?= $post['title']; ?></h2>
         </header>
         <div id="postText">
             <nav id="share" class="inline">

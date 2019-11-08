@@ -147,12 +147,12 @@
     width:740px;
     margin:auto;
     margin-top: 40px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: $standardFont;
     font-weight:300;
 }
 
 #editTitle{
-    font-family: 'Montserrat', sans-serif;
+    font-family: $standardFont;
     font-size:4.8em;
     font-weight:900;
     background: #bc4e9c;  /* fallback for old browsers */

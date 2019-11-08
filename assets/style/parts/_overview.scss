@@ -28,7 +28,7 @@
             position: relative;
             width:80%;
             h2 a{
-                font-family: 'Montserrat', sans-serif;
+                font-family: $standardFont;
                 font-weight:900;
                 &:hover{
                     color:lightcoral;
@@ -37,7 +37,7 @@
 
             a{
                 display: inline-block;
-                font-family: 'Montserrat', sans-serif;
+                font-family: $standardFont;
                 font-weight:300;
                 text-decoration: none;
             }

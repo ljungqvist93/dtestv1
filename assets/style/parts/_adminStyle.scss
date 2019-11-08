@@ -2,6 +2,20 @@ iframe,
 img{
     max-width:100%;
 }
+iframe{
+}
+.ytvid{
+    @media screen and (max-width:600px){
+        height:57vw;
+    }
+    @media screen and (min-width: 601px){
+        height: 450px;
+    }
+}
+
+#player{
+    display: none;
+}
 h2{
     font-size:1.9em;
     font-size:300;

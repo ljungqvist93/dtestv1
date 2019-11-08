@@ -10,6 +10,8 @@ $('.fa-bars').on('click', function() {
     $('#responsiveDesign').slideToggle(150);
 });
 
+$('iframe[src*="youtube"]').wrap("<div class='ytvid'></div>");
+
 $(document).ready(function(){
     $('#caruselle').slick({
         prevArrow: false,

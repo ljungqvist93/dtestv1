@@ -49,7 +49,7 @@
 <?php include 'assets/parts/menu.php'; ?>
 </head>
 <body>
-<main id="postPage">
+<main id="postPage" class="posts">
     <div class="mt40">
         <div id="caruselle">
             <?php foreach ($covers as $cover): ?>

@@ -15,6 +15,7 @@ $(document).ready(function(){
         prevArrow: false,
         nextArrow: false,
         dots: true,
+        autoplay:true,
         autoplaySpeed:3000,
         mobileFirst: true
     });

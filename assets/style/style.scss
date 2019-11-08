@@ -1,8 +1,16 @@
+$standardFont: 'Montserrat', sans-serif;
+$standardWeight: 900;
+
+$titleFont: 'Pacifico', cursive;
+$titleWeight: 400;
+
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
+@import 'parts/article';
 @import 'parts/topper';
 @import 'parts/postAdmin';
 @import 'parts/startPage';

@@ -47,75 +47,7 @@ article{
         }
     }
 
-    header{
-        overflow: hidden;
-        h1{
-            font-family: 'Montserrat', sans-serif;
-            color:#fff;
-            z-index: 1;
-
-            @media screen and (max-width:695px){
-                font-size:1.3em;
-                font-weight:300;
-            }
-            @media screen and (min-width: 696px) and (max-width: 1555px){
-                font-size:3.3em;
-            }
-            @media screen and (min-width: 1556px){
-                font-size:4.8em;
-            }
-        }
-        #dateViews_tags{
-            overflow: hidden;
-            font-family: 'Montserrat', sans-serif;
-            z-index: 22;
-            margin-top:15px;
-            position: relative;
-            padding: 15px 0;
-
-            @media screen and (max-width:640px){
-                font-size:1em;
-                padding: 0;
-                margin-bottom: 15px;
-            }
-            font-size:1.4em;
-
-            #date{
-                a{
-                    text-decoration: none;
-                }
-            }
-
-            #dateViews{
-                float:left;
-                li{
-                    margin-right: 15px;
-                }
-            }
-
-            .fa-calendar-alt{
-                color:#18dcff;
-                margin-right: 5px;
-            }
-
-            .fa-eye{
-                color:#cd84f1;
-            }
-
-            #tags{
-                float:right;
-                @media screen and (max-width:640px){
-                    display: none;
-                }
-                li{
-                    margin-left: 15px;
-                }
-                a{
-                    text-decoration: none;
-                }
-            }
-        }
-    }
+    
 
     picture{
         display: block;

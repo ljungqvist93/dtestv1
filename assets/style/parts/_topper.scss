@@ -25,8 +25,8 @@
         }
     
         h1{
-            font-family: 'Pacifico', cursive;
-            font-weight: 400;
+            font-family: $titleFont;
+            font-weight: $titleWeight;
             overflow: hidden;
             background: #ee0979;
             background: -webkit-linear-gradient(to right, #ff6a00, #ee0979);

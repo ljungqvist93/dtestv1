@@ -42,8 +42,14 @@
 }
 
 #postText{
-    max-width:720px;
-    margin:auto;
+    p,
+    ol,
+    ul,
+    blockquote,
+    h2,h3{
+        max-width:720px;
+        margin:auto;
+    }
     #share{
         margin-bottom: 15px;
         li{

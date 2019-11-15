@@ -3,6 +3,201 @@
   margin: 0;
   box-sizing: border-box; }
 
+#postPage .posts h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  color: #fff;
+  background: #bc4e9c;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #f80759, #bc4e9c);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #f80759, #bc4e9c);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
+  @media screen and (max-width: 600px) {
+    #postPage .posts h2 {
+      font-size: 2em;
+      margin-top: 20px; } }
+  @media screen and (min-width: 601px) and (max-width: 1700px) {
+    #postPage .posts h2 {
+      font-size: 3.5em; } }
+  @media screen and (min-width: 1701px) {
+    #postPage .posts h2 {
+      font-size: 4.8em; } }
+#postPage .posts #dateViews_tags {
+  overflow: hidden;
+  font-family: "Montserrat", sans-serif;
+  z-index: 22;
+  margin-top: 15px;
+  position: relative; }
+  @media screen and (min-width: 601px) {
+    #postPage .posts #dateViews_tags {
+      padding: 10px 0;
+      font-size: 1.4em; } }
+  #postPage .posts #dateViews_tags #date a {
+    text-decoration: none; }
+  #postPage .posts #dateViews_tags #dateViews {
+    float: left; }
+    #postPage .posts #dateViews_tags #dateViews li {
+      margin-right: 15px; }
+  #postPage .posts #dateViews_tags .fa-calendar-alt {
+    color: #18dcff;
+    margin-right: 5px; }
+  #postPage .posts #dateViews_tags .fa-eye {
+    color: #cd84f1; }
+  #postPage .posts #dateViews_tags #tags {
+    float: right; }
+    @media screen and (max-width: 600px) {
+      #postPage .posts #dateViews_tags #tags {
+        margin: 20px 0;
+        display: none; } }
+    #postPage .posts #dateViews_tags #tags li {
+      margin-left: 15px; }
+      @media screen and (max-width: 600px) {
+        #postPage .posts #dateViews_tags #tags li {
+          margin-left: 0; } }
+    #postPage .posts #dateViews_tags #tags a {
+      text-decoration: none; }
+      @media screen and (max-width: 600px) {
+        #postPage .posts #dateViews_tags #tags a {
+          padding: 10px;
+          display: inline-block; } }
+#postPage #caruselle {
+  margin-top: 40px;
+  max-width: 100%; }
+  @media screen and (max-width: 600px) {
+    #postPage #caruselle {
+      display: none; } }
+  #postPage #caruselle div {
+    height: 44.5vw;
+    width: 100%;
+    position: relative; }
+  #postPage #caruselle img {
+    position: absolute;
+    display: block;
+    margin: auto;
+    width: 100%;
+    left: -100%;
+    right: -100%;
+    top: 0;
+    bottom: 0; }
+
+.slick-dots {
+  display: none;
+  position: absolute;
+  bottom: 0; }
+  .slick-dots li {
+    display: inline-block;
+    list-style: none; }
+    .slick-dots li button {
+      background-color: #ddd;
+      border: none;
+      padding: 10px; }
+
+#postText p,
+#postText ol,
+#postText ul,
+#postText blockquote,
+#postText h2, #postText h3 {
+  max-width: 720px;
+  margin: auto; }
+#postText #share {
+  margin-bottom: 15px; }
+  #postText #share li {
+    margin-right: 15px; }
+    #postText #share li .fab {
+      font-size: 1.4em; }
+@media screen and (max-width: 600px) {
+  #postText {
+    padding: 20px 0; } }
+@media screen and (min-width: 601px) {
+  #postText {
+    padding: 60px 0; } }
+#postText iframe,
+#postText img {
+  max-width: 100%; }
+@media screen and (max-width: 600px) {
+  #postText .ytvid {
+    height: 57vw; } }
+@media screen and (min-width: 601px) {
+  #postText .ytvid {
+    height: 450px; } }
+#postText #player {
+  display: none; }
+#postText h2 {
+  font-size: 1.9em;
+  font-family: 'Montserrat', sans-serif;
+  padding: 0 0 30px 0;
+  color: #fff; }
+#postText p, #postText ul, #postText li, #postText a {
+  font-size: 1em; }
+#postText .twitter-tweet {
+  margin: auto;
+  padding: 30px 0; }
+#postText p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2em;
+  font-weight: 300;
+  line-height: 1.6em;
+  margin-bottom: 30px; }
+  #postText p:last-of-type {
+    margin-bottom: 0; }
+#postText .large {
+  max-width: 1374px; }
+#postText strong {
+  font-weight: 900; }
+#postText p, #postText ul, #postText ol, #postText a {
+  color: #fff; }
+#postText a {
+  text-decoration: underline; }
+#postText blockquote {
+  padding: 40px;
+  font-style: italic;
+  background-color: #e17055;
+  margin: 30px 0; }
+#postText p > iframe {
+  margin: 0; }
+#postText ol li {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-size: 1.2em;
+  line-height: 1.6em;
+  margin-top: 30px; }
+  #postText ol li:first-of-type {
+    margin-top: 0; }
+#postText p, #postText ol, #postText ul, #postText iframe, #postText h2, #postText h3 {
+  max-width: 720px;
+  margin: auto; }
+#postText p {
+  padding-bottom: 30px; }
+
+.cover {
+  display: block;
+  margin: 40px 0;
+  margin-left: -120px; }
+
+#mScale img {
+  max-width: 100%; }
+@media screen and (min-width: 601px) {
+  #mScale {
+    display: none; } }
+
+#disqus_thread {
+  max-width: 720px;
+  margin: auto;
+  margin-top: 60px; }
+
+#line {
+  max-width: 720px;
+  margin: auto; }
+  #line:after {
+    content: "";
+    display: block;
+    width: 60%;
+    height: 2px;
+    background-color: #fff; }
+
 .posts h2 {
   font-family: "Montserrat", sans-serif;
   font-weight: 900;
@@ -291,12 +486,21 @@
     top: 0;
     bottom: 0; }
 
+.cke_editable p {
+  max-width: 720px;
+  margin: auto; }
+
 #textField {
-  width: 740px;
-  margin: auto;
   margin-top: 40px;
   font-family: "Montserrat", sans-serif;
   font-weight: 300; }
+  #textField p,
+  #textField ul,
+  #textField ol,
+  #textField blockquote,
+  #textField h2, #textField h3 {
+    margin: auto;
+    max-width: 720px; }
 
 #editTitle {
   font-family: "Montserrat", sans-serif;
@@ -377,193 +581,6 @@ article {
       right: 0;
       margin: auto; }
 
-#postPage .posts h2 {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 900;
-  color: #fff;
-  background: #bc4e9c;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #f80759, #bc4e9c);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #f80759, #bc4e9c);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; }
-  @media screen and (max-width: 600px) {
-    #postPage .posts h2 {
-      font-size: 2em;
-      margin-top: 20px; } }
-  @media screen and (min-width: 601px) and (max-width: 1700px) {
-    #postPage .posts h2 {
-      font-size: 3.5em; } }
-  @media screen and (min-width: 1701px) {
-    #postPage .posts h2 {
-      font-size: 4.8em; } }
-#postPage .posts #dateViews_tags {
-  overflow: hidden;
-  font-family: "Montserrat", sans-serif;
-  z-index: 22;
-  margin-top: 15px;
-  position: relative; }
-  @media screen and (min-width: 601px) {
-    #postPage .posts #dateViews_tags {
-      padding: 10px 0;
-      font-size: 1.4em; } }
-  #postPage .posts #dateViews_tags #date a {
-    text-decoration: none; }
-  #postPage .posts #dateViews_tags #dateViews {
-    float: left; }
-    #postPage .posts #dateViews_tags #dateViews li {
-      margin-right: 15px; }
-  #postPage .posts #dateViews_tags .fa-calendar-alt {
-    color: #18dcff;
-    margin-right: 5px; }
-  #postPage .posts #dateViews_tags .fa-eye {
-    color: #cd84f1; }
-  #postPage .posts #dateViews_tags #tags {
-    float: right; }
-    @media screen and (max-width: 600px) {
-      #postPage .posts #dateViews_tags #tags {
-        margin: 20px 0;
-        display: none; } }
-    #postPage .posts #dateViews_tags #tags li {
-      margin-left: 15px; }
-      @media screen and (max-width: 600px) {
-        #postPage .posts #dateViews_tags #tags li {
-          margin-left: 0; } }
-    #postPage .posts #dateViews_tags #tags a {
-      text-decoration: none; }
-      @media screen and (max-width: 600px) {
-        #postPage .posts #dateViews_tags #tags a {
-          padding: 10px;
-          display: inline-block; } }
-#postPage #caruselle {
-  margin-top: 40px;
-  max-width: 100%; }
-  @media screen and (max-width: 600px) {
-    #postPage #caruselle {
-      display: none; } }
-  #postPage #caruselle div {
-    height: 44.5vw;
-    width: 100%;
-    position: relative; }
-  #postPage #caruselle img {
-    position: absolute;
-    display: block;
-    margin: auto;
-    width: 100%;
-    left: -100%;
-    right: -100%;
-    top: 0;
-    bottom: 0; }
-
-.slick-dots {
-  display: none;
-  position: absolute;
-  bottom: 0; }
-  .slick-dots li {
-    display: inline-block;
-    list-style: none; }
-    .slick-dots li button {
-      background-color: #ddd;
-      border: none;
-      padding: 10px; }
-
-#postText {
-  max-width: 720px;
-  margin: auto; }
-  #postText #share {
-    margin-bottom: 15px; }
-    #postText #share li {
-      margin-right: 15px; }
-      #postText #share li .fab {
-        font-size: 1.4em; }
-  @media screen and (max-width: 600px) {
-    #postText {
-      padding: 20px 0; } }
-  @media screen and (min-width: 601px) {
-    #postText {
-      padding: 60px 0; } }
-  #postText iframe,
-  #postText img {
-    max-width: 100%; }
-  @media screen and (max-width: 600px) {
-    #postText .ytvid {
-      height: 57vw; } }
-  @media screen and (min-width: 601px) {
-    #postText .ytvid {
-      height: 450px; } }
-  #postText #player {
-    display: none; }
-  #postText h2 {
-    font-size: 1.9em;
-    font-size: 300;
-    font-family: 'Montserrat', sans-serif;
-    margin: 60px 0 30px 0;
-    color: #fff; }
-  #postText p, #postText ul, #postText li, #postText a {
-    font-size: 1em; }
-  #postText .twitter-tweet {
-    margin: auto;
-    padding: 30px 0; }
-  #postText p {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.2em;
-    font-weight: 300;
-    line-height: 1.6em;
-    margin-bottom: 30px; }
-    #postText p:last-of-type {
-      margin-bottom: 0; }
-  #postText .large {
-    max-width: 1374px; }
-  #postText strong {
-    font-weight: 900; }
-  #postText p, #postText ul, #postText ol, #postText a {
-    color: #fff; }
-  #postText a {
-    text-decoration: underline; }
-  #postText blockquote {
-    padding: 40px;
-    font-style: italic;
-    background-color: #e17055;
-    margin: 30px 0; }
-  #postText p > iframe {
-    margin: 0; }
-  #postText ol li {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 300;
-    font-size: 1.2em;
-    line-height: 1.6em;
-    margin-top: 30px; }
-    #postText ol li:first-of-type {
-      margin-top: 0; }
-
-.cover {
-  display: block;
-  margin: 40px 0;
-  margin-left: -120px; }
-
-#mScale img {
-  max-width: 100%; }
-@media screen and (min-width: 601px) {
-  #mScale {
-    display: none; } }
-
-#disqus_thread {
-  max-width: 720px;
-  margin: auto;
-  margin-top: 60px; }
-
-#line {
-  max-width: 720px;
-  margin: auto; }
-  #line:after {
-    content: "";
-    display: block;
-    width: 60%;
-    height: 2px;
-    background-color: #fff; }
-
 #about h1 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 900;
@@ -629,5 +646,14 @@ article {
 
 .mt60 {
   margin-top: 60px; }
+
+.ad {
+  width: 728px;
+  height: 90px !important;
+  margin: auto;
+  margin-top: 50px; }
+
+.google-auto-placed {
+  margin: 0 0 50px 0 !important; }
 
 /*# sourceMappingURL=style.css.map */

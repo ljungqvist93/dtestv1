@@ -68,6 +68,13 @@ include 'connect.php';
 			'postText'		=>	$postText
         ]);
 
+        if ($_POST['reset'] == 1){
+            $reset = $db->prepare("
+                UPDATE posts SET views = 0, created_at = NOW() WHERE id = $id
+            ");
+            $reset->execute();
+        }
+
         $postTags = $db->prepare("
             DELETE
             FROM post_tag
@@ -163,6 +170,7 @@ include 'connect.php';
                         <?php endif; ?>
 					</select>
                 </div>
+                <input type="checkbox" name="reset" value="1">
                 <div id="tags" style="margin: 10px 0px;">
                     <div id="newtag">
                         <div id="selectedtags" style="margin-bottom:10px;"></div>

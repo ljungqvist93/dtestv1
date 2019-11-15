@@ -5,7 +5,7 @@
 	$cover = $_GET['cover'];
 
     $fetchImages = $db->query("
-        SELECT * FROM postimages WHERE cover = $cover AND postimages.postId = $thisId
+        SELECT * FROM postimages WHERE cover = $cover AND postimages.postId = $thisId ORDER BY created DESC
 	")->fetchAll(PDO::FETCH_ASSOC);
 
 ?>

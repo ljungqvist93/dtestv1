@@ -18,9 +18,8 @@ iframe{
 }
 h2{
     font-size:1.9em;
-    font-size:300;
     font-family: 'Montserrat', sans-serif;
-    margin: 60px 0 30px 0;
+    padding: 0 0 30px 0;
     color:#fff;
 }
 p,ul,li,a{
@@ -72,4 +71,13 @@ ol{
             margin-top: 0;
         }
     }
+}
+
+p,ol,ul,iframe,h2,h3{
+    max-width:720px;
+    margin:auto;
+}
+
+p{
+    padding-bottom: 30px;
 }

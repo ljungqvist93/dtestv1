@@ -143,9 +143,21 @@
     }
 }
 
+.cke_editable{
+    p{
+        max-width:720px;
+        margin:auto;
+    }
+}
 #textField{
-    width:740px;
-    margin:auto;
+    p,
+    ul,
+    ol,
+    blockquote,
+    h2,h3{
+        margin:auto;
+        max-width:720px;
+    }
     margin-top: 40px;
     font-family: $standardFont;
     font-weight:300;

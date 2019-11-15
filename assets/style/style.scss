@@ -10,11 +10,11 @@ $titleWeight: 400;
     box-sizing: border-box;
 }
 
+@import 'parts/postPage';
 @import 'parts/article';
 @import 'parts/topper';
 @import 'parts/postAdmin';
 @import 'parts/startPage';
-@import 'parts/postPage';
 @import 'parts/about';
 @import 'parts/overview';
 
@@ -42,4 +42,15 @@ $titleWeight: 400;
 
 .mt60{
     margin-top: 60px;
+}
+
+.ad{
+    width:728px;
+    height:90px !important;
+    margin:auto;
+    margin-top: 50px;
+}
+
+.google-auto-placed{
+    margin: 0 0 50px 0 !important;
 }

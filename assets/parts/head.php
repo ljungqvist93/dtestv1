@@ -70,6 +70,19 @@
             }
         </script>
 
+    
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-90622404-3"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-90622404-3');
+        </script>
+
+
+        <script data-ad-client="ca-pub-7566748514057450" data-ad-format="rectangle" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
 
         <?php if($theme === 'light'): ?>
             <link rel="stylesheet" href="/assets/style/lightstyle.css" type="text/css" />

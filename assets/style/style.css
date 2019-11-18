@@ -581,10 +581,24 @@ article {
       right: 0;
       margin: auto; }
 
-#about h1 {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 900;
-  font-size: 2.4em; }
+#about {
+  margin-top: 50px; }
+  #about h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 2.6em;
+    line-height: 1.4em; }
+  #about h2 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    margin-top: 50px; }
+  #about p {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 1.5em;
+    width: 80%;
+    margin-top: 30px; }
 
 .wrapper {
   max-width: 1000px;

@@ -45,12 +45,14 @@ $titleWeight: 400;
 }
 
 .ad{
-    width:728px;
-    height:90px !important;
+    max-height:350px;
+    width:864px;
     margin:auto;
-    margin-top: 50px;
+}
+.top{
+    margin-bottom: 30px;
 }
 
 .google-auto-placed{
-    margin: 0 0 50px 0 !important;
+    display: none;
 }

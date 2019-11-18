@@ -70,6 +70,17 @@
             }
         </script>
 
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-90622404-3"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-90622404-3');
+        </script>
+
+
         <?php if($theme === 'light'): ?>
             <link rel="stylesheet" href="/assets/style/lightstyle.css" type="text/css" />
         <?php elseif($theme === 'dark'): ?>

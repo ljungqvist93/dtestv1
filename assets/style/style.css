@@ -648,12 +648,14 @@ article {
   margin-top: 60px; }
 
 .ad {
-  width: 728px;
-  height: 90px !important;
-  margin: auto;
-  margin-top: 50px; }
+  max-height: 350px;
+  width: 864px;
+  margin: auto; }
+
+.top {
+  margin-bottom: 30px; }
 
 .google-auto-placed {
-  margin: 0 0 50px 0 !important; }
+  display: none; }
 
 /*# sourceMappingURL=style.css.map */

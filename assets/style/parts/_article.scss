@@ -25,14 +25,14 @@
         overflow: hidden;
         font-family: $standardFont;
         z-index: 22;
-        margin-top:15px;
+        margin-top:30px;
         position: relative;
 
         @media screen and (max-width: 600px){
 
         }
         @media screen and (min-width: 601px){
-            padding: 10px 0;
+            padding: 16px 0;
             font-size:1.4em;
         }
 

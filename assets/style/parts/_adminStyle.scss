@@ -6,7 +6,10 @@ iframe{
 }
 .ytvid{
     @media screen and (max-width:600px){
-        height:57vw;
+        height:66vw;
+        iframe{
+            height:100%;
+        }
     }
     @media screen and (min-width: 601px){
         height: 450px;
